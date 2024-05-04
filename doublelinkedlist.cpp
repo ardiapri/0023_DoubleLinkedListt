@@ -48,5 +48,24 @@ void addNode()
             current = current->next;
         }
 
+        newNode->next = current;
+        newNode->prev = previous;
+
+        if (current != NULL)
+        {
+            current->prev = newNode;
+        }
+
+        if (previous != NULL)
+        {
+            previous->next = newNode;
+        }
+        else
+        {
+            // if previous is still NULL, it means NewNode is now the first node
+            START = newNode;
+        }
+    }
+}
 
 
