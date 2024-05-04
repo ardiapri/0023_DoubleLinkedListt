@@ -158,5 +158,13 @@ void searchData()
     cin >> num;
     if (search(num, &prev, &curr) == false)
         cout << "\nRecord not found" << endl;
+    else
+    {
+        cout << "\nRecord found" << endl;
+        cout << "\nRoll number: " << curr->noMhs << endl;
+        cout << "\nName: " << curr->name << endl;
+    }
+}
+
 
 
