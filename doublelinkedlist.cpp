@@ -145,5 +145,11 @@ void traverse()
         }
     }
 }
+void searchData()
+{
+    if (listEmpty() == true)
+    {
+        cout << "\nList is empty" << endl;
+    }
 
 
